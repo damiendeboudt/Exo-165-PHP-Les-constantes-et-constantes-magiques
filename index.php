@@ -27,6 +27,10 @@ echo "- ".basename(__DIR__). "<br>";
 echo "- ".basename(__FILE__). "<br>";
 echo "- ".maClasse::class . "<br>";
 
+foreach ($_SERVER as $param => $values) {
+    echo "$param = $values<br>";
+}
+
 /**
  * 6. Utilisez la bonne constante magique et éventuellement la bonne fonction pour afficher un maximum
  * d'informations sur la page actuelle4
